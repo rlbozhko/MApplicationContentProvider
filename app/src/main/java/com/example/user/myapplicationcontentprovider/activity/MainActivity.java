@@ -1,4 +1,4 @@
-package com.example.user.myapplicationcontentprovider;
+package com.example.user.myapplicationcontentprovider.activity;
 
 import android.database.Cursor;
 import android.os.Bundle;
@@ -7,6 +7,9 @@ import android.provider.ContactsContract;
 import android.support.v7.app.ActionBarActivity;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+
+import com.example.user.myapplicationcontentprovider.R;
+import com.example.user.myapplicationcontentprovider.content_provider.Contract;
 
 
 public class MainActivity extends ActionBarActivity
@@ -37,6 +40,12 @@ public class MainActivity extends ActionBarActivity
                 new String[] {ContactsContract.Data.DISPLAY_NAME},
                 new int[] {android.R.id.text1},
                 0));
+
+        getContentResolver().query(Contract.CONTENT_URI,
+                null,
+                null,
+                null,
+                null);
     }
 
 
