@@ -12,10 +12,10 @@ import com.example.user.myapplicationcontentprovider.R;
 import com.example.user.myapplicationcontentprovider.content_provider.Contract;
 
 
-public class MainActivity extends ActionBarActivity
+public class ListActivity extends ActionBarActivity
 //        implements LoaderManager.LoaderCallbacks<Cursor>
 {
-
+// ЗДЕСЬ НЕДоДЕЛАНО осталось от предыдущего примера под ДБ непеределанно
     private ListView listView;
 
     @Override
